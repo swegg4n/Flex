@@ -1,4 +1,4 @@
-package com.example.flex
+package com.moreau.flex
 
 import io.flutter.embedding.android.FlutterActivity
 

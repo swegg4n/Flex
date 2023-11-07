@@ -12,12 +12,26 @@ dependencies:
     sdk: flutter
 
   google_fonts: ^6.1.0
+  font_awesome_flutter: ^10.1.0
+  intl: ^0.18.1
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
+
+  assets:
+  - assets/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  adaptive_icon_foreground: "assets/logo_foreground.png"
+  adaptive_icon_background: "#ffffff"
