@@ -23,8 +23,10 @@ class GraphScreen extends StatelessWidget {
             (maxDateTime.minute - minDateTime.minute) ~/ 2 + minDateTime.minute);
 
         List<Box> boxes = [];
-        int idx = AppPreferences.getFlexIndex() + 1;
         int numBoxes = AppPreferences.keepFlexRotation;
+
+        int idx = (AppPreferences.getFlexIndex() + 1) % numBoxes;
+
         List<String> savedFlexTimes = AppPreferences.getFlexTimes();
         debugPrint(savedFlexTimes.toString());
         for (var i = 0; i < numBoxes; i++, idx = (idx + 1) % numBoxes) {
